@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+/* 웹 폰트 */
+@font-face {
+    font-family: "Lobster";
+    font-weight: 400;
+    src: url(../font/Lobster-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "DoHyeon";
+    font-weight: 400;
+    src: url(../font/DoHyeon-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Oswald";
+    font-weight: 400;
+    src: url(../font/Oswald-VariableFont_wght.ttf) format("truetype");
+}
+
+
+/* 전체 */
+body {
+    font-size: 12px;
+    font-family: "Oswald","DoHyeon";
+    background-image: url(../images/bodyback.png);
+}
+.header,  .visual, .contents, .aside, .footer{
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+.contentWrapper {
+    padding-bottom: 200px;
+}
+
+/* ------header---------------------------------------------------- */
+.header ul {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.header h1 a img {
+    width: 250px;
+}
+.header ul > li {
+    float: left;
+}
+.header ul > li a {
+    color: rgb(126, 126, 126);
+    margin-right: 20px;
+}
+.header ul  li > a:hover {
+    border-bottom: 1px solid #000;
+}
+.header ul > li:hover, .header ul li > a:hover {
+    color: #000;
+}
+.topMenu li img {
+    padding-left: 10px;
+    width: 15px;
+    cursor: pointer;
+}
+.searchForm {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+}
+.searchForm fieldset {
+    padding: 0;
+    border: 0;
+}
+.searchForm input {
+    width: 200px;
+    padding: 3px 5px;
+}
+.searchForm button {
+    padding: 3px 5px;
+    position: absolute;
+    right: 0;
+    background-color: black;
+    color: #fff;
+    border-radius: 3px;
+}
+.searchForm button:hover {
+    background-color: #6667ab;
+    border: 2px solid #bcbcff;
+}
+.searchForm input:focus {
+    outline: none;
+}
+
+
+/* ------navigation 영역--------------------------------------------- */
+.navigation {
+    background-image: linear-gradient(to bottom, #000 0%,#6667ab 90%);
+    height: 30px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+.mainMenu {
+    width: 960px;
+    margin: 0 auto;
+}
+.mainMenu .drop {
+    width: 19%;
+    height: 30px;
+    float: left;
+    position: relative;
+    font-size: 1.2em;
+    border-left: 1px solid #bcbcff;
+}
+.mainMenu .drop > a {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    color: #fff;
+}
+.mainMenu .drop:last-child {
+    border-right: 1px solid #bcbcff;
+}
+.mainMenu .drop:hover > a {
+    color: #bcbcff;
+}
+.mainMenu li #about1 {
+    height: 116px;
+}
+.mainMenu li #about2 {
+    height: 142px;
+}
+.mainMenu li #about3,.mainMenu li #about4,.mainMenu li #about5 {
+    height: 86px;
+}
+.mainMenu li .about {
+    width: 100%;
+    margin-top: 30px;
+    padding: 4px 0 0 0;
+    background-color: rgba(102, 103, 255, 0.5);
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+.mainMenu .about li {
+    line-height: 2em;
+}
+.mainMenu li .about a {
+    color: #fff;
+    position: relative;
+    display: block;
+}
+.mainMenu li .about li:hover {
+    background: rgba(102, 103, 255, 0.8);
+}
+
+
+/* footer 영역 ----------------------------------------------------------*/
+.footer {
+    width: 100%;
+    height: 187px;
+    background-image: linear-gradient(to bottom, #000 0%,#6667ab 90%);
+    padding: 10px 0;
+    margin-top: 100px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+}
+#footerInner {
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+#footerInner, .snsIcon {
+    width: 960px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+#footerInner > a > img {
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    bottom: 5px;
+    width: 25px;
+    left: 50% ;
+    transform: translateX(-50%);
+}
+#footerInner > a  img:hover {
+    border: 2px solid #bcbcff;
+}
+#serviceView {
+    margin-right: 10px;
+}
+#serviceView {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+#serviceView > a{
+    color: #fff;
+    position: absolute;
+    right: 10px;
+}
+#serviceView > a:hover {
+    color: #bcbcff;
+}
+/* .snsIcon a::before {
+    content: "_";
+    color: #fff;
+} */
+.snsIcon a {
+    padding: 20px;
+    width: 25px;
+}
+.snsIcon a img {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 25px;
+}
+.snsIcon a img:hover {
+    border: 2px solid #bcbcff;
+    border-radius: 10px;
+}

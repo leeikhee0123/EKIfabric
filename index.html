@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css?ver=1">
+    <link rel="stylesheet" href="css/common.css?ver=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" href="icon/favicon.ico">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
+    <title>EKI Fabric</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="contentWrapper">
+            <!------anitext 영역--------------------------------------------->
+            <div class="aniText">
+                <img src="images/ani_text.png" alt="회전이미지">
+            </div>
+            <!------header 영역--------------------------------------------->
+            <div class="header">
+
+                <h1><a href="index.html"><img src="images/iconHome.png" alt="EKI Fabric"></a></h1>
+            
+                <ul class="topMenu">
+                    <li><a href="#">language</a></li>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                    <li>
+                        <img src="images/menuicon.png" alt="햄버거메뉴">
+                    </li>
+                </ul>
+
+                <form action="search.jsp" method="get" class="searchForm">
+                    <fieldset>
+                        <legend></legend>
+                        <input type="search" id="keyword" name="keyword" placeholder="Search" required>
+                        <button type="submit">검색</button>
+                    </fieldset>
+                </form>
+
+            </div>
+
+
+            <!------navigation 영역--------------------------------------------->
+            <div class="navigation">
+                <ul class="mainMenu">
+                    <li class="drop"><a href="#">Designer</a>
+                        <ul id="about5" class="about">
+                            <li><a href="#">대표 인사</a></li>
+                            <li><a href="#">회사 소개</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="drop"><a href="design.html">Pattern</a>
+                        <ul id="about1" class="about">
+                            <li><a href="design.html">My Pattern</a></li>
+                            <li><a href="#">수상작</a></li>
+                            <li><a href="#">추천 디자인</a></li>
+                            <li><a href="#">인기 디자인</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="drop"><a href="#">Pattern Mall</a>
+                        <ul id="about2" class="about">
+                            <li><a href="#">Animal</a></li>
+                            <li><a href="#">Flower</a></li>
+                            <li><a href="#">Paisley</a></li>
+                            <li><a href="#">Check</a></li>
+                            <li><a href="#">Dot</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="drop"><a href="#">기획전</a>
+                        <ul id="about4" class="about">
+                            <li><a href="#">공모전</a></li>
+                            <li><a href="#">Textile Awards</a></li>
+                            <li><a href="#">기념품 Design</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="drop"><a href="#">커뮤니티</a>
+                        <ul id="about3" class="about">
+                            <li><a href="#">자유 게시판</a></li>
+                            <li><a href="#">유저 갤러리</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!------visual 영역--------------------------------------------->
+            <!-- <div class="visual">
+                <img src="images/Bourgeoisie.png" alt="" width="450px" height="250px">
+                <a href="#"><img src="images/visualL.png" alt="left" class="visualL"></a>
+                <a href="#"><img src="images/visualR.png" alt="right" class="visualR"></a>
+            </div> -->
+            <div class="visual">
+                <div class="animation_canvas">
+                    <div class="slider_panel">
+                        <img class="slider_image" src="images/bird_child.png" alt="사진1">
+                        <img class="slider_image" src="images/Bourgeoisie.png" alt="사진2">
+                        <img class="slider_image" src="images/Flower_Garden.png" alt="사진3">
+                        <img class="slider_image" src="images/In_Gyeongbokgung.png" alt="사진4">
+                        <img class="slider_image" src="images/Memories_of_the_farm.png" alt="사진5">
+                        <img class="slider_image" src="images/Mystic_Archtectural_Craft.png" alt="사진6">
+                        <img class="slider_image" src="images/Rose_Rain.png" alt="사진7">
+                        <img class="slider_image" src="images/Space_Transformation.png" alt="사진8">
+                        <img class="slider_image" src="images/Then_and_now.png" alt="사진9">
+                        <img class="slider_image" src="images/Twin_Rose.png" alt="사진10">
+                    </div>
+                </div>
+
+                <!-- 좌우 컨트롤 패널 -->
+                <div class="left_right_control_panel">
+                    <img class="left_control" src="images/visualL.png" alt="좌 슬라이드">
+                    <img class="right_control" src="images/visualR.png" alt="우 슬라이드">
+                </div>
+            </div>
+
+
+            <!------contents 영역--------------------------------------------->
+            <div class="contents">
+                
+                <section class="notice">
+                    <h2><a href="#notice">공지사항</a></h2>
+                    <ul>
+                        <li>
+                            <a href="#">홈페이지 이용 전 필독!</a>
+                            <time datetime="2022-06-23">2022.06.23</time>
+                        </li>
+                        <li>
+                            <a href="#">올해의 color를 사용한 디자인 공모전 참여방법</a>
+                            <time datetime="2022-06-23">2022.06.23</time>
+                        </li>
+                        <li>
+                            <a href="#">디자인 저작권 침해 대처방법</a>
+                            <time datetime="2022-06-23">2022.06.23</time>
+                        </li>
+                        <li>
+                            <a href="#">나만의 디자인을 보여주는 장소</a>
+                            <time datetime="2022-06-23">2022.06.23</time>
+                        </li>
+                    </ul>
+                    <a href="#" class="more" title="공지사항 더보기">더 보기▶</a>
+                </section>
+
+                <!-- 이벤트1 이미지 -->
+                <section class="event1">
+                    <a href="#event"><img src="images/event.jpg" alt="이벤트 홈페이지"></a>
+                    <a href="#event"><p>이<br>벤<br>트<br>_<br>1</p></a>
+                </section>
+
+                <div id="contentsLine"></div>
+
+                <!-- 이벤트2 이미지 -->
+                <section class="event2">
+                    <a href="#event"><img src="images/event.png?ver=1" alt="이벤트 이미지"></a>
+                    <a href="#event"><p>이<br>벤<br>트<br>_<br>2</p></a>
+                </section>
+
+                <section class="bestBoard">
+                    <h2><a href="#bestBoard">인기 게시판</a></h2>
+                    <ul>
+                        <li>
+                            <a href="#">여름에 시원한 느낌의패턴을 만들려고 하는데 어떤 컬러가 좋을까요?</a>
+                            <time datetime="2022-07-03">2022.07.03</time>
+                        </li>
+                        <li>
+                            <a href="#">있잖아... 내가 공모전에 3개를 참여했는데 어떻게 하나도 상을 안주니...</a>
+                            <time datetime="2022-07-01">2022.07.01</time>
+                        </li>
+                        <li>
+                            <a href="#">우리 애들이 직접그린 그림으로 패턴을 만들어봤어요!</a>
+                            <time datetime="2022-06-29">2022.06.29</time>
+                        </li>
+                        <li>
+                            <a href="#">등골이 오싹한 패턴은 어때?</a>
+                            <time datetime="2022-06-29">2022.06.29</time>
+                        </li>
+                    </ul>
+                    <a href="#" class="more" title="게시판 더보기">더 보기▶</a>
+                </section>
+
+            </div>
+
+
+            <!------aside 영역--------------------------------------------->
+            <div class="aside">
+
+                <div class="btn1 btn">
+                    <h3>디자인 제작 체험</h3>
+                    <p>선생님과 함께 디자인부터 제작까지!</p>
+                </div>
+
+                <div class="btn2 btn">
+                    <h3>추천 디자인</h3>
+                    <p>디자이너들이 추천하는 디자인 보기.</p>
+                </div>
+
+                <div class="btn3 btn">
+                    <h3>인기 디자인</h3>
+                    <p>사람들이 가장 좋아하는 디자인 보기.</p>
+                </div>
+
+                <div class="btn4 btn">
+                    <h3>나만의 디자인</h3>
+                    <p>내가 직접만든 패턴으로 제작하기.</p>
+                </div>
+
+            </div>
+        </div>
+        <!------footer 영역--------------------------------------------->
+        <div class="footer">
+
+            <div id="footerInner">
+                <p>EKI Fabric &nbsp;|&nbsp; 대표. 이익희 </p>
+                <p>Tel. 010-9428-2650 &nbsp;|&nbsp; Email. znzld8520@gmail.com</p>
+                <p>Location. 경기도 이천시 아리역로 37</p>
+                <p id="serviceView"><a href="#">서비스 전체보기 &gt;</a></p>
+                <a href="https://map.naver.com/" target="blank"><img src="images/locationicon.png" alt="위치지도"></a>
+            </div>
+            <div class="snsIcon">
+                <a href="https://www.instagram.com/" target="blank"><img src="images/instaicon.png" alt="인스타그램"></a>
+                <a href="https://ko-kr.facebook.com/" target="blank"><img src="images/facebookicon.png" alt="페이스북"></a>
+                <a href="https://open.kakao.com/o/sXAoJIue" target="blank"><img src="images/kakaoicon.png" alt="카카오톡"></a>
+                <a href="https://twitter.com/?lang=ko" target="blank"><img src="images/twitterIcon.png" alt="트위터"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* contentWrapper -----------*/
+.contantWrapper {
+    height: 1550px;
+}
+/* 비주얼 영역-------------------------------------------------- */
+#bigLogo {
+    text-align: center;
+}
+#bigLogo>img {
+    position: relative;
+    width: 500px;
+}
+/* 로그인 영역-------------------------------------------------- */
+.loginhome {
+    margin: 0 auto;
+    width: 500px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+#loginForm fieldset{
+    border: 2px solid #6667ab;
+    border-radius: 10px;
+}
+.loginhome h2 {
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.loginhome p {
+    text-align: center;
+}
+.loginhome p > label {
+    display: inline-block;
+    width: 10px;
+    height: 12px;
+    text-indent: 10px; /*들여쓰기*/
+    white-space: nowrap; /*줄바꿈*/
+    font-size: 1.3em;
+}
+.loginhome p > input {
+    margin-left: 75px;
+}
+#loginForm {
+    text-align: center;
+}
+.loginhome #loginForm button {
+    padding: 5px 100px;
+    margin: 10px 7px 5px 7px ;
+    font-size: 1.3em;
+}
+.loginhome #loginForm fieldset > button:hover {
+    background: linear-gradient(to bottom, #6667ab 0%, #fff 100%);
+    border-radius: 4px;
+}
+.loginhome .memberLink {
+    margin: 15px 0 5px 0;
+}
+.loginhome .memberLink a {
+    color: #fff;
+    margin: 0 5px;
+}
+.loginhome .memberLink a:hover {
+    color: #6667ab;
+}
+.loginhome .memberLink a::before {
+    content: "|";
+    margin-right: 10px;
+}
+/* 슬로건 영역 ----------------------------------------------- */
+.welcome {
+    text-align: center;
+    margin-top: 100px;
+}
+.welcome p {
+    font-size: 3em;
+    text-shadow: 2px 2px 3px rgb(71, 51, 127);
+    font-family: 'Lobster';
+}

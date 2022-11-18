@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* ------anitext 영역---------------------------------------------- */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.aniText {
+    text-align: center;
+    position: absolute;
+    top: 6%;
+    left: 30px;
+    margin: 0 auto;
+    display: inline;
+    z-index: -1;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+.aniText img {
+    width: 250px;
+}
+/* 이미지 영역--------------------------------------------- */
+.board {
+    margin: 0 auto;
+    height: 3000px;
+    position: relative;
+    text-align: center;
+}
+.board section {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+.board:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.board section ul {
+    display: none;
+}
+.board section:nth-child(0) ul {
+    display: block;
+}
+.board h2 {
+    
+    margin: 0 auto;
+    display: block;
+    float: left;
+    font-size: 1em;
+    width: 14.28571428571429%;
+    height: 80px;
+    line-height: 80px;
+}
+.board h2 a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    color: #000;
+    font-family: "DoHyeon";
+    font-size: 1.2em;
+    border: 1px solid #0e1a3b;
+    background: linear-gradient(to bottom, #fff 0%, #6667ab 100%);
+}
+/* .board h2 a:hover {
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, #6667ab 100%);
+    color: #fff;
+} */
+.board ul {
+    padding-inline-start:0 ;
+    position: absolute;
+    margin-top: 150px;
+    top: 40px;
+    left: 0;
+    width: 100%;
+}
+.board .liText {
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 2em;
+    padding: 30px 0 50px 0;
+    text-shadow: -1px -1px 2px rgb(255, 255, 255), 1px -1px 2px rgb(255, 255, 255), 1px 1px 2px rgb(150, 105, 255), -1px 1px 2px rgb(150, 105, 255);
+}
+.board ul li:first-child img {
+    width: 960px;
+}
+.board ul li img{
+    box-shadow: 10px 7px 10px #666;
+}
+.board li {
+    padding: 30px 0;
+}
+.sizeImg5 img {
+    width: 500px;
+}
+.sizeImg3 img {
+    width: 300px;
+}
